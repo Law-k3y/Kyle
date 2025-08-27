@@ -12,17 +12,18 @@
 	"antiInbox": true,
 	"language": "en",
 	"notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
-	"nickNameBot": "[ _ ]巛𝚅𝙾𝙻𝙳𝙸𝙶𝙾 𝙱𝙾𝚃",
-	"prefix": "_",
+	"nickNameBot": "[ • ]巛Zephyr 𝙱𝙾𝚃",
+	"prefix": "•",
 	"adminOnly": {
 		"enable": false,
 		"ignoreCommand": []
 	},
 	"adminBot": [
-		"61568791604271"
+		"61565434041712",
+		"61579129512213"
 	],
 	"nisanBot": [
-		"9806523922789501"
+		"6337002989691929"
 	],
 	"notes": "YOUR GROUP ID or Tid ID SET NOW , BECAUSE BOT LOGS MESSAGE SENT YOUR GROUP",
 	"whiteListMode": {
