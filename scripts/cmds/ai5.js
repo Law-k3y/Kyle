@@ -48,13 +48,13 @@ module.exports = {
     },
     onStart: async function({ api, event, args }) {
         const input = args.join(' ').trim();
-        if (!input) return api.sendMessage(formatResponse("salut, comment puis-je vous aider ?"), event.threadID);
+        if (!input) return api.sendMessage(formatResponse("hello there, how can i help ?"), event.threadID);
 
         try {
             const res = await getAIResponse(input);
             api.sendMessage(formatResponse(res), event.threadID, event.messageID);
         } catch {
-            api.sendMessage(formatResponse("Erreur de traitement"), event.threadID);
+            api.sendMessage(formatResponse("🎯 Response error"), event.threadID);
         }
     },
     onChat: async function({ event, message }) {
@@ -63,13 +63,13 @@ module.exports = {
         if (!triggers.some(t => body.startsWith(t))) return;
 
         const input = body.slice(body.split(' ')[0].length).trim();
-        if (!input) return message.reply(formatResponse("Salut, comment puis-je vous aider ?"));
+        if (!input) return message.reply(formatResponse("🫡 Hello,  how may i help you sir!?"));
 
         try {
             const res = await getAIResponse(input);
             message.reply(formatResponse(res));
         } catch {
-            message.reply(formatResponse("Erreur de service"));
+            message.reply(formatResponse("Server error sir!, Try later"));
         }
     }
 };
